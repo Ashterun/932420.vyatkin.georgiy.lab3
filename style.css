@@ -135,6 +135,38 @@ button:hover {
   margin: 0;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid figure:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.gallery-grid figcaption {
+  background-color: var(--accent-color);
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 8px;
+  width: calc(100% - 16px);
+  text-align: center;
+}
+
 aside {
   padding: 20px;
   background-color: var(--accent-color);
