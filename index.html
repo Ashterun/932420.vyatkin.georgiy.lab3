@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О себе</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      input[type="email"] {
+        padding: 15px;
+        border-radius: 10px;
+        border: 2px solid blue;
+      }
+
+      input[type="email"]:focus {
+        border-color: var(--accent-color);
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="padding: 20px">
+      <h1>Вяткин Георгий</h1>
+      <h2>Студент-разработчик</h2>
+      <a href="https://github.com/Ashterun">GitHub</a>
+    </header>
+
+    <main>
+      <section class="skills-section">
+        <h3>Навыки</h3>
+        <div class="skills-grid">
+          <div class="skills-card">
+            C++
+            <div class="badge">Top skill</div>
+          </div>
+          <div class="skills-card">C#</div>
+          <div class="skills-card">JavaScript</div>
+          <div class="skills-card">Python</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Проекты</h3>
+        <ol>
+          <li>2D платформер на Unity</li>
+          <li>Сайт с несколькими реализованными алгоритмами (например, A*)</li>
+          <li>ToDo-приложение на JavaScript</li>
+        </ol>
+      </section>
+
+      <aside>
+        <h3>Любимые технологии</h3>
+        <p>Unity, Visual Studio Code, Blender</p>
+      </aside>
+
+      <img
+        src="https://i.pinimg.com/originals/74/05/f7/7405f728fcfee92d0b8a4e19b56f66a4.jpg?nii=t"
+        alt="Аватар"
+        width="100"
+        height="100"
+      />
+      <form>
+        <input type="text" name="Name" placeholder="Имя" />
+        <input type="email" name="Email" placeholder="Email" />
+        <textarea name="Message" placeholder="Сообщение"></textarea>
+        <button>Отправить</button>
+      </form>
+    </main>
+    <footer>© 2026 Вяткин Георгий</footer>
+  </body>
+</html>
