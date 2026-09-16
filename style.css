@@ -12,12 +12,14 @@ body {
   color: var(--contrasting-color);
   font-family: var(--font-family);
   line-height: 1.3;
+  text-align: center;
+  overflow-x: hidden;
 }
 
 header {
   position: static;
+  padding: 20px;
   background-color: var(--accent-color);
-  text-align: center;
 }
 
 a {
@@ -27,10 +29,6 @@ a {
 
 a:visited {
   color: gray;
-}
-
-.skills-section {
-  text-align: center;
 }
 
 .skills-grid {
@@ -45,7 +43,6 @@ a:visited {
   padding: 25px;
   border-radius: 12px;
   background-color: var(--accent-color);
-  text-align: center;
   transition:
     transform 0.3s,
     box-shadow 0.3s ease;
@@ -74,4 +71,17 @@ a:visited {
 
 form {
   display: flex;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--contrasting-color);
+  outline: none;
 }
